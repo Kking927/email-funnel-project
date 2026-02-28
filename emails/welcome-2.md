@@ -1,19 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Your First Guide</title>
-  <style>
-    body { font-family: 'Helvetica Neue', sans-serif; color: #1D3557; background-color: #F5F9F7; margin: 0; padding: 2rem; }
-    h1 { color: #4FB6A4; }
-    p { line-height: 1.5; }
-    a.button { display: inline-block; background-color: #4FB6A4; color: white; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; margin-top: 1rem; }
-  </style>
-</head>
-<body>
-  <h1>Your First Guide</h1>
-  <p>We hope you're enjoying the content so far! Here’s a resource we think you’ll find useful.</p>
-  <p>Click the button below to access it:</p>
-  <a href="#" class="button">View Guide</a>
-</body>
-</html>
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#F5F9F7; padding:20px 0;">
+  <tr>
+    <td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff; padding:40px; border-radius:8px;">
+        <tr>
+          <td style="font-family: Helvetica, Arial, sans-serif; color:#1D3557;">
+            
+            <h1 style="color:#4FB6A4; margin-top:0;">Your First Guide</h1>
+            
+            <p style="line-height:1.5;">
+              We hope you're enjoying the content so far! Here’s a resource we think you’ll find useful.
+            </p>
+            
+            <p style="line-height:1.5;">Click the button below to access it:</p>
+            
+            <a href="#" style="display:inline-block; background-color:#4FB6A4; color:#ffffff; 
+               padding:12px 24px; border-radius:5px; text-decoration:none; margin-top:20px;">
+              View Guide
+            </a>
+            
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
