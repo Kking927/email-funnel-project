@@ -13,7 +13,14 @@ form.addEventListener("submit", async (e) => {
       body: JSON.stringify({ email }),
     });
 
-    const data = await res.json();
+    const text = await res.text();
+
+    let data = {};
+    try {
+      data = JSON.parse(text);
+    } catch (e) {
+      data = { message: text };
+    }
 
     if (res.ok) {
       message.textContent = "Thanks! Check your inbox for your guide.";
@@ -21,6 +28,7 @@ form.addEventListener("submit", async (e) => {
     } else {
       message.textContent = data.message || "Oops! Something went wrong.";
     }
+
   } catch (err) {
     console.error(err);
     message.textContent = "Error connecting to server.";
