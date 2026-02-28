@@ -1,49 +1,35 @@
-# Lead Magnet Funnel Project
+# Lead Magnet Email Funnel
 
-This is a simple lead magnet sales funnel project, including a landing page, email sequence, and assets/screenshots. It is set up to work with MailerLite for email capture and automated welcome emails.
-
-## Folder Structure
-project-root/
-├── front-end/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-├── emails/
-│ ├── welcome-email-1.html
-│ ├── welcome-email-2.html
-│ └── welcome-email-3.html
-└── README.md
-
-
-## Front-End
-
-The `front-end/` folder contains:
-
-- `index.html` – The landing page with hero section and email signup form.  
-- `style.css` – Styles for the landing page, including responsive layout.  
-- `script.js` – Handles form submission directly to MailerLite via API.  
-
-### Setup
-
-1. Replace `YOUR_API_KEY` and `YOUR_GROUP_ID` in `script.js` with your MailerLite credentials.  
-2. Deploy the `front-end/` folder to **Netlify**, **Vercel**, or another static host.  
-3. The landing page will send emails directly to MailerLite and trigger the welcome email sequence.
+This is a simple lead capture landing page with a MailerLite email automation funnel. Users can enter their email to receive a free guide, and the emails are sent automatically through MailerLite.
 
 ---
 
-## Email Sequence
+## Features
 
-The `emails/` folder contains the **three welcome emails** sent via MailerLite:
-
-1. `welcome-email-1.html` – Immediate welcome and thank you.  
-2. `welcome-email-2.html` – Deliver the lead magnet / guide.  
-3. `welcome-email-3.html` – Engagement follow-up / next steps.  
+- Landing page with email signup form
+- Backend integration with MailerLite API to add subscribers to a group
+- Three-email automation funnel:
+  1. Welcome email
+  2. Guide email
+  3. Next steps email
+- Emails designed with inline CSS and tables for cross-client compatibility
+- Uses serverless function for email submission (deployed on Vercel)
 
 ---
 
-## Notes
+## Tech Stack
 
-- The project uses **MailerLite** to handle email storage, validation, and the welcome sequence.  
-- No backend is required; the form submits directly to MailerLite via `script.js`.  
-- The project is responsive and works on mobile and desktop.  
-- Designed for portfolio demonstration purposes.
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js serverless function (`api/subscribe.js`)
+- **Deployment:** Vercel
+- **Email Platform:** MailerLite
+
+---
+
+## Skills Demonstrated
+
+- Basic API integration with a third-party service
+- Handling form submission with frontend JavaScript
+- Using environment variables for API keys
+- Setting up email automation in MailerLite
+- Writing simple email HTML
